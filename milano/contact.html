@@ -51,13 +51,13 @@
                            <ul class="nav">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About</a></li>
-                                <li><a href="pricing.html">Services</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+                                <!--/<li><a href="pricing.html">Services</a></li>-->
+                                <!--/<li><a href="gallery.html">Gallery</a></li>-->
                                 <li><a data-scroll class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
                             </ul>
                        </div>
                        <div class="header-btn">
-                           <a href="tel:123-456-7890" class="menu-btn">Book Appointment</a>
+                           <a href="contact.html" class="menu-btn">Apply Now</a>
                        </div>
                     </div>
                 </nav>
@@ -72,13 +72,17 @@
 		        <div class="contact-wrap d-flex align-items-center row">
                     <div class="col-lg-6 sm-padding">
 		                <div class="contact-info">
-		                    <h2>Get in touch with us & <br>send us message today!</h2>
-		                    <p>Saasbiz is a different kind of architecture practice. Founded by LoganCee in 1991, we’re an employee-owned firm pursuing a democratic design process that values everyone’s input.</p>
+		                    <h2>We are currently hiring!<br>Contact us by calling, Facebook Messenger, or Instagram DM for more information.</h2>
+		                    <!--/<p>We are currently hiring! Contact us by calling or through facebook messenger for more information.</p>-->
                             <p></p>
-                            <h3>Hours of Operation:<br>*hours*</h3>
+                            <h3>Hours of Operation:<br>TBD</h3>
                             <p></p>
                             <h3>5801 Long Prarie Rd. Suite 680<br>Flower Mound, TX 75028</h3>
-		                    <h4><span>Email:</span> admin@milanonailspaflowermound.com <br> <span>Phone:</span> (123) 456-7890</h4>
+		                    <h4><span>Email:</span> admin@milanonailflowermound.com <br> <span>Phone:</span> (123) 456-7890</h4>
+                            <ul class="widget_social">
+                                <li><a href="https://www.facebook.com/profile.php?id=100088937447858"><i class="social_facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/milanonailspafm/"><i class="social_instagram"></i></a></li>
+                            </ul>
 		                </div>
 		            </div>
 		            <div class="col-lg-6 sm-padding">
@@ -86,20 +90,20 @@
                             <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
                                 <div class="form-group colum-row row">
                                     <div class="col-sm-6">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required disabled>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required disabled>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
+                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required disabled></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <button id="submit" class="default_btn" type="submit">Send Message</button>
+                                        <button id="submit" class="default_btn" type="submit" disabled>Send Message</button>
                                     </div>
                                 </div>
                                 <div id="form-messages" class="alert" role="alert"></div>
@@ -116,7 +120,7 @@
                     <div class="col-lg-3 col-md-6 sm-padding">
                         <div class="footer_widget">
                             <img class="mb-15" src="img/logo.png" alt="Brand">
-                            <p>Simple about section descr.</p>
+                            <p>A pretty manicure makes for a pretty smile</p>
                             <ul class="widget_social">
                                 <li><a href="https://www.facebook.com/profile.php?id=100088937447858"><i class="social_facebook"></i></a></li>
                                 <li><a href="https://www.instagram.com/milanonailspafm/"><i class="social_instagram"></i></a></li>
@@ -127,15 +131,15 @@
                         <div class="footer_widget">
                             <h3>Location</h3>
                             <p>5801 Long Prarie Rd. Suite 680, Flower Mound, TX75028</p>
-                            <p>admin@milanonailspaflowermound.com <br>(456) 789-1012</p>
+                            <p>admin@milanonailflowermound.com <br>(456) 789-1012</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 sm-padding">
                         <div class="footer_widget">
                             <h3>Hours</h3>
                             <ul class="opening_time">
-                                <li>Monday - Friday 9am - 7pm</li>
-                                <li>Saturday - Sunday: 9am – 8pm</li>
+                                <li>Monday - Friday: TBD</li>
+                                <li>Saturday - Sunday: TBD</li>
                             </ul>
                         </div>
                     </div>
@@ -144,8 +148,8 @@
                             <h3>Subscribe for new announcements</h3>
                             <div class="subscribe_form">
                                 <form action="#" class="subscribe_form">
-                                    <input type="email" name="email" id="subs-email" class="form_input" placeholder="Email Address...">
-                                    <button type="submit" class="submit">SUBSCRIBE</button>
+                                    <input type="email" name="email" id="subs-email" class="form_input" placeholder="Email Address..." disabled>
+                                    <button type="submit" class="submit" disabled>SUBSCRIBE</button>
                                     <div class="clearfix"></div>
                                     <div id="subscribe-result">
                                         <p class="subscription-success"></p>
