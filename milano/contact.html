@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Contact Us">
         <meta name="author" content="Brian Nguyen">
-       
-        <title>Contact Us</title>
-        
+
+        <title>Milano Nail Spa Flower Mound | Contact Us</title>
+
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 
         <!-- Elegant Font Icons CSS -->
@@ -41,7 +41,7 @@
                 <img src="img/loading.gif" width="80" alt="">
             </div>
         </div><!-- Preloader -->
-        
+
         <header id="header" class="header-section">
             <div class="container">
                 <nav class="navbar ">
@@ -57,28 +57,28 @@
                             </ul>
                        </div>
                        <div class="header-btn">
-                           <a href="contact.html" class="menu-btn">Apply Now</a>
+                           <a href="apply.html" class="menu-btn">Apply Now</a>
                        </div>
                     </div>
                 </nav>
             </div>
 		</header> <!--.header-section -->
-        
+
         <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.7003964549754!2d-97.0845217845774!3d33.064353680886285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c32a5ed2fdc0f%3A0xa86734c8e2db8ae6!2s5801%20Long%20Prairie%20Rd%20%23680%2C%20Flower%20Mound%2C%20TX%2075028%2C%20USA!5e0!3m2!1sen!2sca!4v1672542340717!5m2!1sen!2sca" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:350px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:100%;}</style></div>
-		
+
 		<section class="contact-section padding">
             <div class="map"></div>
 		    <div class="container">
 		        <div class="contact-wrap d-flex align-items-center row">
                     <div class="col-lg-6 sm-padding">
 		                <div class="contact-info">
-		                    <h2>We are currently hiring!<br>Contact us by calling, Facebook Messenger, or Instagram DM for more information.</h2>
-		                    <!--/<p>We are currently hiring! Contact us by calling or through facebook messenger for more information.</p>-->
+		                    <h2>We are accepting applications!<br>Please click "Apply Now" for more information.</h2>
+		                    <a href="apply.html" class="default_btn animated fadeInUp" style="opacity: 1; margin-top: 4px">Apply Now</a>
                             <p></p>
                             <h3>Hours of Operation:<br>TBD</h3>
                             <p></p>
                             <h3>5801 Long Prarie Rd. Suite 680<br>Flower Mound, TX 75028</h3>
-		                    <h4><span>Email:</span> admin@milanonailflowermound.com <br> <span>Phone:</span> (123) 456-7890</h4>
+		                    <h4><span>Email:</span> milanonailflowermound@gmail.com <br> <span>Phone:</span> (737) 786-9999</h4>
                             <ul class="widget_social">
                                 <li><a href="https://www.facebook.com/profile.php?id=100088937447858"><i class="social_facebook"></i></a></li>
                                 <li><a href="https://www.instagram.com/milanonailspafm/"><i class="social_instagram"></i></a></li>
@@ -87,23 +87,30 @@
 		            </div>
 		            <div class="col-lg-6 sm-padding">
 		                <div class="contact-form">
-                            <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
+                            <form action="contact.php" method="POST" id="ajax_form" class="form-horizontal">
                                 <div class="form-group colum-row row">
                                     <div class="col-sm-6">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required disabled>
+                                        <label for="name" style="padding-left: 6px">Full Name *</label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required disabled>
+                                        <label for="email" style="padding-left: 6px">Email *</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="example@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12" style="padding-bottom: 15px">
+                                        <label for="phone" style="padding-left: 6px">Phone # *</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="1234567890" maxlength="16" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="message" style="padding-left: 6px">Skills *</label>
+                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required disabled></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <button id="submit" class="default_btn" type="submit" disabled>Send Message</button>
+                                        <button id="submit" class="default_btn" type="submit">Send Message</button>
                                     </div>
                                 </div>
                                 <div id="form-messages" class="alert" role="alert"></div>
@@ -113,7 +120,7 @@
 		        </div>
 		    </div>
 		</section><!-- /.contact-section -->
-       
+
         <section class="widget_section padding">
             <div class="container">
                 <div class="row">
@@ -131,7 +138,7 @@
                         <div class="footer_widget">
                             <h3>Location</h3>
                             <p>5801 Long Prarie Rd. Suite 680, Flower Mound, TX75028</p>
-                            <p>admin@milanonailflowermound.com <br>(456) 789-1012</p>
+                            <p>milanonailflowermound@gmail.com <br>(737) 786-9999</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 sm-padding">
@@ -167,19 +174,19 @@
 			<div class="container">
                 <div class="row">
                     <div class="col-md-6 xs-padding">
-                        <div class="copyright">&copy; <script type="text/javascript"> document.write(new Date().getFullYear())</script> Milano Nail Spa Flower Mound - By Brian Nguyen</div>
+                        <div class="copyright">&copy; <script type="text/javascript"> document.write(new Date().getFullYear())</script> Milano Nail Spa Flower Mound</div>
                     </div>
                     <div class="col-md-6 xs-padding">
                         <ul class="footer_social">
-                            <li><a href="mailto:briann.wdev@milanonailspaflowermound.com">Report Problem</a></li>
+                            <li><a href="mailto:briann2305@gmail.com">Report Problem</a></li>
                         </ul>
                     </div>
                 </div>
 			</div>
 		</footer><!-- /.footer_section -->
-        
+
 		<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_up"></i></a>
-	
+
 		<!-- jQuery Lib -->
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- Bootstrap JS -->
@@ -210,6 +217,6 @@
 		<script src="js/appointment.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
-   
+
     </body>
 </html>

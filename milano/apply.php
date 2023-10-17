@@ -4,6 +4,8 @@
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $phone = trim($_POST["phone"]);
+        $type = trim($_POST["type"]);
+        $years = trim($_POST["years"]);
         $message = trim($_POST["message"]);
 
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -18,6 +20,8 @@
         $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n";
         $email_content .= "Phone: $phone\n";
+        $email_content .= "Position: $type\n";
+        $email_content .= "Years of Experience: $years\n";
         $email_content .= "Message: $message\n";
 
         $email_headers = "From: $name <$email>\r\nReply-to: <$email>";

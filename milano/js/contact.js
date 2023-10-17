@@ -1,5 +1,5 @@
 $(function() {
-    // Get the form.
+    // Get the form.l
     var form = $('#ajax_form');
 
     // Get the messages div.
@@ -24,11 +24,12 @@ $(function() {
 			$(formMessages).addClass('alert-success');
 
 			// Set the message text.
-			$(formMessages).text(response);
+			$(formMessages).text('Thank You! Your message has been sent.');
 
 			// Clear the form.
 			$('#name').val('');
 			$('#email').val('');
+			$('#phone').val('');
 			$('#message').val('');
 		})
 		.fail(function(data) {
